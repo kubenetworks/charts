@@ -1,5 +1,8 @@
 # Helm charts for KubeVPN server
 
+Use helm to install kubevpn server means use cluster mode. All user will use this instance. Please make sure users sholud have permission to namespace `kubevpn`.
+Otherwise, kubevpn will fallback to create kubevpn deployment in own namespace.
+
 ## Install with default mode
 ```shell
 helm install kubevpn kubevpn/kubevpn -n kubevpn --create-namespace
